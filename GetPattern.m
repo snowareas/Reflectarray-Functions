@@ -1,4 +1,4 @@
-function [pattern,th,ph] = GetPattern(phase,posx,posy,k,Feed,Rc,qf,qe,needplot)
+function [pattern,th,ph] = GetPattern(phase,posx,posy,k,Feed,Rc,qf,qe)
 %GET_PATTERN 得到3维方向图
 
 Nx = length(posx);
@@ -23,24 +23,5 @@ for i = 1:Nx
     end
 end
 pattern = cos(th) .^qe .*pattern;
-
-if needplot
-    mindb = -60;
-    patterndb = 20* log10(abs(pattern));
-    patterndb = - max(max(patterndb)) + patterndb;
-    patterndb(patterndb < mindb) = mindb;
-
-    u = sin(th).*cos(ph);
-    v = sin(th).*sin(ph);
-    figure;
-    mesh(u,v,patterndb);
-    view(0,90);
-    title('pattern');
-    xlabel('$\sin\theta \cos\phi$','Interpreter','LaTex');
-    ylabel('$\sin\theta \sin\phi$','Interpreter','LaTex');
-    zlabel('E/dB');
-    cbar = colorbar;
-    drawnow;
-end
 end
 
