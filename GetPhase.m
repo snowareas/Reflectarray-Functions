@@ -1,5 +1,4 @@
 function phase = GetPhase(posx,posy,beamvec,Feed,Rc,k)
-%GETAPHI 获得单个未交叠阵列相位
 
 Nx = length(posx);
 Ny = length(posy);

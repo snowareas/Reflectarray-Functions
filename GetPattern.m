@@ -1,5 +1,4 @@
 function [pattern,th,ph] = GetPattern(phase,posx,posy,k,Feed,Rc,qf,qe)
-%GET_PATTERN 得到3维方向图
 
 Nx = length(posx);
 Ny = length(posy);

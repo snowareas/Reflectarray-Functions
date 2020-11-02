@@ -1,5 +1,4 @@
 function [AF,u,v] = Pifft(S,m,n,qe)
-%PIFFT 计算方向性系数
 %   S 阵列幅相；m v点数；n u点数；
 AF = ifft2(S',m,n);
 % AF = [AF(floor(m/2)+1:end,:);AF(1:floor(m/2),:)];

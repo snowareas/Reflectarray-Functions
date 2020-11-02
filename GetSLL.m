@@ -1,5 +1,4 @@
 function sll = GetSLL(Fdb,U,V)
-%SLL  ‰»Îdb∑ΩœÚÕº£¨’“≈‘∞Í
 peaks = [];
 for i = 2:size(Fdb,1)-1
     for j = 2:size(Fdb,2)-1

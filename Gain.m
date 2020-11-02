@@ -1,5 +1,4 @@
 function G = Gain(tar_th,tar_ph,posx,posy,k,Feed,Rc,phase,qf,qe,P)
-%GAIN ÔöÒæ
 % D0 = Directivity_angle(F,th,ph,tar_th,tar_ph);
 Nx = length(posx);
 Ny = length(posy);

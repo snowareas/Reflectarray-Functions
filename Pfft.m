@@ -1,5 +1,4 @@
 function S = Pfft(P,Nx,Ny,qe)
-%PFFT 方向性系数反推阵列幅相分布
 %   P u,v线性坐标系下的方向图；Nx Ny 方阵阵元数量
 [m,n] = size(P);
 u = linspace(-1,1,n);

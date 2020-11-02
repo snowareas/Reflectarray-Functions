@@ -1,5 +1,4 @@
 function [Pout,theta] = GetPtheta(Pin,th,ph,target_phi)
-%GETPATTERN_THETA 获得phi角相等的面的方向图
 target_phi = mod(target_phi,pi);
 phi = ph(:,1);
 theta = th(1,:);
